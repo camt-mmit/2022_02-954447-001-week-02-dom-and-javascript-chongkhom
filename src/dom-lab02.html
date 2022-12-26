@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM - Lab02</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link rel="stylesheet" href="./css/dom-lab02.css" />
+    <script type="module" src="./js/dom-lab02.js"></script>
+  </head>
+  <body>
+    <template id="tmp-input">
+      <div class="cmp-input-container">
+        <label>
+          <b class="cmp-input-title"
+            >Number <span class="cmp-input-no"></span
+          ></b>
+          <input type="number" value="0" required />
+        </label>
+        <button type="button" class="cmd-remove-input cl-warn">
+          <i class="material-icons">delete_forever</i>
+        </button>
+      </div>
+    </template>
+
+    <template id="tmp-section">
+        <section class="cmp-input-section">
+            </button>
+            <h3>Section <span class="cmp-section-no"></span>
+                <button type="button" class="cmd-remove-section cl-warn">
+                    <i class="material-icons">delete_forever</i>
+            </h3>
+            <div class="cmp-section-title">
+                <button type="button" class="cmd-add-input">
+                    <i class="material-icons">add</i>
+                    Add Number
+                </button>
+            </div>
+            <div class="cmp-inputs-container"></div>
+            <div class="border">
+                <label>
+                    <b>Result</b>
+                    <output class="cmp-result">0</output>
+                </label>
+            </div>
+        </section>
+      </template>
+
+      <main class="cmp-main-container">
+      <div>
+        <button type="button" class="cmd-add-section">
+            <i class="material-icons">add</i>
+            Add Section
+        </button>
+      </div>
+      <div class="cmp-sections-container"></div>
+    </main>
+  </body>
+</html>
